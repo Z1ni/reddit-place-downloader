@@ -231,7 +231,7 @@ int main(int argc, char *argv[]) {
 	if (write_image(filename) == -1) {
 		fprintf(stderr, "Image saving failed!\n");
 	} else {
-		printf("Image saved             \nSaved as \"place.png\"\n");
+		printf("Image saved             \nSaved as \"%s\"\n", filename);
 	}
 
 	curl_easy_cleanup(curl);
